@@ -150,7 +150,7 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
 
 /* main image */
 .main {
-    background:url('../img/bg006.png') no-repeat;
+    background:#3685d2;
     background-size: cover;
     background-position: center bottom;
     height: auto;
@@ -799,7 +799,7 @@ footer{
 }
 @media screen and (max-width: 485px) {
     h1 {
-        font-size: 37px;
+        font-size: 31px;
     }
     .contents {
         padding: 40px 10px;
