@@ -495,27 +495,136 @@
 
   
       
-
     <div class="form-box" id="fm-box">
         <div class="inner" style="text-align:-webkit-center;">
-        <div style="text-align:-webkit-center;border:1.5px solid #000;width:95%;padding:10px 20px;max-width:450px;" > 
-        <a href="" class="scroll box" style="border-color:#000;text-align:-webkit-center;">
-                            
-            <span class="timer" style="color:#000;font-size:14px;font-weight:600;">
-                혜택 마감 | <span id="day1" style="font-weight:600;"></span> ( <span id="countdown1" style="font-weight:600;"></span>)
-            </span>
-        </a></div><br><br>
+            <div style="text-align:-webkit-center;border:1.5px solid #000;width:95%;padding:10px 20px;max-width:450px;">
+                <a href="" class="scroll box" style="border-color:#000;text-align:-webkit-center;">
+                    <span class="timer" style="color:#000;font-size:14px;font-weight:600;">
+                        혜택 마감 | <span id="day1" style="font-weight:600;"></span> ( <span id="countdown1" style="font-weight:600;"></span>)
+                    </span>
+                </a>
+            </div><br><br>
             <h1 class="form-top-title" id="form-title">혜택 지원 신청하기</h1>
-            <!-- <h1 class="form-top-title"><span class="blink"> (지도사 자격증 무료 혜택은, 신청폼 아래 섹션을 참조하세요.)</span></h1> -->
         
             <div class="form-box-inner">
-                <iframe src='https://marketclub.cafe24.com/form_make/form.php?type=set&pt=mmbc8511&it=444&rgb1=&rgb2=&rgb3=&rgb4=&rgb5=%235E36DD&rgb6=&btn_name=%C7%FD%C5%C3+%C1%F6%BF%F8+%BD%C5%C3%BB%C7%CF%B1%E2&tracking_gubun=fasebook&tracking_code=733395772339355&tracking_label='  width='100%' style="height:430px;" frameborder='0'></iframe>
+                <form action="" id="form_e11" method="POST" target="hidden_iframe11" onsubmit="syncIframeData(); dll(); submitted=true;">
+                    <input type="hidden" name="entry.925560115" value="">
+                    <div class="form-box-tb-out">
+                        <br>
+                        <table class="form-box-tb">
+                            <tbody>
+                                <tr id="select_lic">
+                                    <th>자격증<br></th>
+                                    <td>
+                                        <select name='entry.302176945' id='license' class="form-control" placeholder="현재 조건" onchange="syncIframeField('entry.302176945', this.value)">
+                                            <option value="자격증 선택" disabled>자격증 선택</option>
+                                            <option value="손해평가사">손해평가사</option>
+                                            <option value="베이비시터">베이비시터</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이름</th>
+                                    <td>
+                                        <input type='text' name='entry.286048134' id='name' class="form-control" placeholder="성함" maxlength="4" oninput="syncIframeField('entry.286048134', this.value)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>연락처</th>
+                                    <td>
+                                        <input type='text' name='entry.440436541' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11" oninput="syncIframeField('entry.440436541', this.value)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>나이</th>
+                                    <td>
+                                        <input type='text' name='entry.1336420307' id='id-number' class="form-control" placeholder="나이" maxlength="2" oninput="syncIframeField('entry.1336420307', this.value)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>통화가능시간</th>
+                                    <td>
+                                        <select name="entry.882151947" id='position' class="form-control" placeholder="현재 조건" onchange="syncIframeField('entry.882151947', this.value)">
+                                            <option value="통화가능시간" selected disabled>통화가능시간</option>
+                                            <option value="언제나 통화 가능">언제나 통화 가능</option>
+                                            <option value="오전 09:00~10:00">오전 09:00 ~ 10:00</option>
+                                            <option value="오전 10:00~11:00">오전 10:00 ~ 11:00</option>
+                                            <option value="오전 11:00~12:00">오전 11:00 ~ 12:00</option>
+                                            <option value="점심 12:00~01:00">점심 12:00 ~ 01:00</option>
+                                            <option value="오후 01:00~02:00">오후 01:00 ~ 02:00</option>
+                                            <option value="오후 02:00~03:00">오후 02:00 ~ 03:00</option>
+                                            <option value="오후 03:00~04:00">오후 03:00 ~ 04:00</option>
+                                            <option value="오후 04:00~05:00">오후 04:00 ~ 05:00</option>
+                                            <option value="오후 05:00~06:00">오후 05:00 ~ 06:00</option>
+                                            <option value="오후 06:00~07:00">오후 06:00 ~ 07:00</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>문의사항</th>
+                                    <td>
+                                        <textarea name='entry.2051055902' id='message' class="form-control" placeholder="문의사항을 적어주세요.(선택)" style="min-height:100px" oninput="syncIframeField('entry.2051055902', this.value)"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <td>
+                                        <span>* 맞춤 무료 자격증 정보를 전달드립니다.</span>
+                                        <br><input type="text" name='entry.1667605872' id='email' class="form-control" placeholder="이메일 주소 (선택)" oninput="syncIframeField('entry.1667605872', this.value)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border-bottom: none">
+                                        <input class="submit-btn" type='submit' id='send_message' value='혜택 지원 신청하기' style="background:#595959">
+                                        <div class="form-agree-box">
+                                            <p class="form-info-agree">
+                                                <span>
+                                                    <input type="checkbox" name="agree11" id="agree11" value="개인정보보호정책 동의" checked>
+                                                    <label style="color:black; font-weight:300;font-size:13px;margin-top:-3px;" for="agree11">개인정보보호정책</label>
+                                                    <span class="privacyBtn" style="color:black;font-weight:400; font-size: 13px;margin-top:-3px;" onclick="privacyPopUp()">
+                                                        [자세히 보기]
+                                                    </span>
+                                                </span>
+                                            </p>
+                                            <script type="text/javascript">var submitted = false;</script>
+                                            <iframe name="hidden_iframe11" id="hidden_iframe11" style="display:none;" onload=""></iframe>
+                                            <iframe name="hidden_iframe12" id="hidden_iframe12" style="display:none;" onload=""></iframe>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+                <iframe src='https://marketclub.cafe24.com/form_make/form.php?type=set&pt=flosmarketing&it=444&rgb1=%2329292A&rgb2=&rgb3=&rgb4=&rgb5=%23433BEF&rgb6=&btn_name=%C7%FD%C5%C3+%C1%F6%BF%F8+%BD%C5%C3%BB%C7%CF%B1%E2&tracking_gubun=fasebook&tracking_code=1648614855905924&tracking_label=' name="marketclub" width='100%' height='650px' frameborder='0' id="marketclub_iframe"></iframe>
             </div>
         </div>
-        </div><!----form-end------>
+    </div>
 
+  
 
-    
+    <script>
+        $(document).ready(function() {
+            // Function to set value in iframe's input field
+            function setIframeFieldValue() {
+                var iframe = document.getElementById('marketclub_iframe');
+                
+                // Ensure the iframe is fully loaded
+                iframe.onload = function() {
+                    // Get the iframe's document
+                    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    
+                    // Set the value to the input field with name="user_name"
+                    $(iframeDoc).find("input[name='user_name']").val('안녕');
+                };
+            }
+
+            // Call the function to set value
+            setIframeFieldValue();
+        });
+    </script>
+      
+
     <!-- <div id="form"></div> -->
 </div><!-- contentsWrap end -->
 
@@ -773,8 +882,8 @@
 
 
 
-    
-    <div id="form"></div>
+  
+    <!-- <div id="form"></div> -->
 </div><!-- contentsWrap end -->
 
    
@@ -928,7 +1037,7 @@ padding-bottom:6px;
      <!-- jQuery library -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <!-- Popper JS -->
-     <script src="js/validation.js"></script>
+     <script src="js/validation-row.js"></script>
      <script src="js/personal.js"></script>
     <script src="js/main.js" charset="euc-kr"></script>
     <script src="./js/count.js" ></script>
@@ -967,7 +1076,7 @@ padding-bottom:6px;
  $('#logo_img, #menu_logo').attr("src","./img/lic_favicon.png");
 $('#lgt, #menu_text').text("국가 자격증 지원 센터");
 $('[name="entry.302176945"]').val("손해평가사");
-$('[name="entry.925560115"]').val("당근");
+$('[name="entry.925560115"]').val("메타");
 $('#form1').attr("name","fm");
 $('#select_lic').css({"display":"none"});
 $('.mn1').addClass("active");
